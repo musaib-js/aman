@@ -1,0 +1,44 @@
+<!--
+  sbse phle hum extend krege jis file se hume sb jagah render krana h same cheez ko jaise ki navbar..
+  Views se direct yaha pr aayega  control vo check krega ki bhai base.html mei koi aise blocks hain kya.Jaise ki yaha pr pehla block hai title. Control jayega base.html  mei, koi title naam ka block hai kya? Agr hai toh usko yha le aao jaise ki waha title tapotap thi uske saath yha wala Home jod diya...
+  block k aage jo b hoga vo render ho jayega jaha b block bna hoga... 
+-->
+
+{% extends 'myapp/base.html' %}
+{% block title %} | Home{% endblock title %}
+{% block body%}
+
+
+<div class="container-fluid px-0"  >
+  
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/images/ban1.svg" class="d-block w-100" alt="..." >
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/banner 02.svg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/ban1.svg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><hr>
+<div class="container-fluid">
+  
+    <h1 class="d-flex justify-content-center my-3 " style="color:#336699;" >Best Sellers </h1>
+
+     
+    
+
+
+
+{%endblock body%}
